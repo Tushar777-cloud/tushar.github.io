@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-t"></i>
+            <div class="logo-text">Tushar laha</div>
+          </div>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="C:\Users\hp\OneDrive\Desktop\Website\index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="C:\Users\hp\OneDrive\Desktop\Website\about_me.html">About me</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/08/03/23/09/jesus-christ-8168123_1280.png"
+              alt="profile pic"
+            />
+          </div>
+          <div class="hero-text">
+            <h5> <span class="input"></span></h5>
+            <h1 class="shiny-text">Tushar Laha</h1>
+            <p>
+              Welcome to my website! This is a space where I share my ideas,
+              projects, and insights. Whether you're here to explore, connect,
+              or simply learn more about what I do, I hope you find something
+              valuable. Feel free to look around and reach out—I’d love to hear
+              from you!
+            </p>
+            <div class="btn-group">
+              <a href="#" class="btn active">Download CV</a>
+              <a href="#" class="btn">Contact</a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script>
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+      var links=document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click",function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+
+      })
+
+      var typed=new Typed(".input",{
+        strings:["I can do all things through Christ who strengthens me.(Philippians 4:13)","Trust in the Lord with all your heart and lean not on your own understanding.(Proverbs 3:5)"],
+        backdSpeed:75,
+        typeSpeed:60,
+        
+        loop:true
+      })
+    </script>
+  </body>
+</html>
